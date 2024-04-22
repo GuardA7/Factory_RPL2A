@@ -1,24 +1,19 @@
 <?php
 
 class Car implements VehicleInterface {
-    private $type = 'Car';
-    private $brand;
-    private $model;
+    private string $brand;
+    private string $model;
 
-    public function __construct($brand, $model) {
+    public function __construct(string $brand, string $model) {
         $this->brand = $brand;
         $this->model = $model;
     }
 
-    public function getType() {
-        return $this->type;
-    }
-
-    public function getBrand() {
+    public function getBrand(): string {
         return $this->brand;
     }
 
-    public function getModel() {
+    public function getModel(): string {
         return $this->model;
     }
 }
