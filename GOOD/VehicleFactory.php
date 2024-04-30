@@ -11,3 +11,4 @@ class VehicleFactory {
         return "Type: Motorcycle<br>Brand: " . $motorcycle->getBrand() . "<br>Model: " . $motorcycle->getModel() . "\n\n";
     }
 }
+?>
